@@ -1,16 +1,17 @@
 @font-face {
-    font-family: "iranyekan" ;
-    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
-    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
-    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
-    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+    font-family: "iranyekan";
+    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#"),
+        url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+        url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+        url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
 }
+
 @font-face {
-    font-family: "iranyekan_numbers" ;
-    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
-    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
-    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
-    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+    font-family: "iranyekan_numbers";
+    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#"),
+        url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+        url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+        url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
 }
 
 * {
@@ -22,7 +23,7 @@
 body {
     direction: rtl;
     background-color: #1d1d1d;
-    font-family: 'iranyekan_numbers','iranyekan';
+    font-family: 'iranyekan_numbers', 'iranyekan';
 }
 
 a {
@@ -327,6 +328,8 @@ footer hr {
 
     .flex-coment {
         margin-right: -10px;
+        font-size: 10px;
+        gap: 15px;
     }
 
     .container {
