@@ -8,10 +8,10 @@
 
 @font-face {
     font-family: "iranyekan_numbers";
-    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#"),
-        url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
-        url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
-        url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+    src: url("../../fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#"),
+        url("../../fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+        url("../../fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+        url("../../fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
 }
 
 * {
@@ -169,13 +169,6 @@ a {
     background-position: 100% center;
 }
 
-.flex-coment {
-    gap: 5px;
-    display: flex;
-    margin-right: -36px;
-    margin-top: 15px;
-}
-
 .flex-form {
     width: 50%;
     margin: 70px auto;
@@ -199,6 +192,7 @@ input {
     margin-right: 30px;
     outline: 0;
     border: none;
+    color: #cfbb2d;
     background-color: #353535;
 }
 
@@ -221,6 +215,7 @@ textarea {
     margin-right: 30px;
     margin-top: 10px;
     padding: 18px;
+    color: #f3dc35;
     background-color: #353535;
 }
 
@@ -233,6 +228,40 @@ textarea {
 }
 
 /*comment*/
+/*comment-j*/
+.comment-j {
+    width: 65%;
+    display: flex;
+    margin: 0 auto;
+    min-height: 100px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #353535;
+}
+
+.matn-comment {
+    margin-top: 18px;
+    margin-right: 38px;
+}
+
+.matn-comment p {
+    margin-top: 15px;
+    color: #ddd;
+}
+.matn-comment h4 {
+    color: #f3f3f3;
+    font-size: 20px;
+}
+.flex-coment {
+    gap: 10px;
+    display: flex;
+    margin-right: -193px;
+    font-size: 11px;
+    margin-top: 92px;
+    margin-bottom: 10px;
+}
+
+/*comment-j*/
 /*pagination*/
 .pagination-box {
     display: flex;
@@ -274,13 +303,14 @@ footer {
 footer p {
     color: #a6a6a6;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 14px;
     text-shadow: 1px 1px #7e6f6f;
 }
 
 
-footer hr {
-    margin-top: 25px
+.hr-footer {
+    border: 1px solid #7e6f6f;
+    margin-top: 30px;
 }
 
 /*footer*/
@@ -296,8 +326,11 @@ footer hr {
     .img2 {
         width: 50%;
     }
-}
+    .comment-j {
+        width: 95%;
 
+}
+}
 @media only screen and (max-width: 720px) {
     #wrapper {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -312,6 +345,23 @@ footer hr {
 @media only screen and (max-width: 600px) {
     #wrapper {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .container {
+        width: 98%;
+    }
+
+    textarea {
+        margin-right: 0;
+        margin-top: -2px;
+    }
+
+    input {
+        margin-right: 0;
+    }
+
+    .flex-coment {
+        margin-right: 0;
     }
 }
 
